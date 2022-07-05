@@ -210,16 +210,16 @@ hr {
 @media (hover: none) {
     
     .on:focus .button {
-        animation: move_button 0.2s ease-in-out forwards  ;
+        animation: move_button 0.1s ease-in-out forwards  ;
     /*   content: "123";
         left: 50%;
         background: #329ad5;*/
     }
     #hero .on:focus .words {
-        animation: show 0.2s ease-in-out forwards;
+        animation: show 0.1s ease-in-out forwards;
     }
     #hero .on:focus .words::after {
-        animation: showwords 0.3s  ease-in-out forwards;
+        animation: showwords 0.2s  ease-in-out forwards;
     }
     @keyframes show {
         100% {
