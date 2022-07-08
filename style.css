@@ -210,16 +210,16 @@ hr {
 @media (hover: none) {
     
     .on:focus .button {
-        animation: move_button 0.1s ease-in-out forwards  ;
+        animation: move_button 0.2s ease-in-out forwards  ;
     /*   content: "123";
         left: 50%;
         background: #329ad5;*/
     }
     #hero .on:focus .words {
-        animation: show 0.1s ease-in-out forwards;
+        animation: show 0.2s ease-in-out forwards;
     }
     #hero .on:focus .words::after {
-        animation: showwords 0.2s  ease-in-out forwards;
+        animation: showwords 0.3s  ease-in-out forwards;
     }
     @keyframes show {
         100% {
@@ -450,6 +450,98 @@ hr {
     }
 }  
 /*----------------------------*/
+#works .top {
+    width: 100%;
+    height: 80px;
+    
+}
+#works .section_title {
+    font-size: 3rem;
+    font-weight: 300;
+}
+#works .works {
+    text-align: center;
+    max-width: 1200px;
+   
+    margin: 0 auto;
+    padding: 100px 50px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+
+#works .illustrators {
+    display: flex;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+#works .box {
+    margin: 0 10px;
+    width: 250px;
+    height: auto;
+  
+    
+}
+
+
+#works .imgcontain {
+    position: relative; 
+    overflow: hidden;
+    margin: 15px 0;
+}
+#works .dis {
+    color:#333;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 0 !important;
+    height: 28px;
+    left: 0;
+    bottom: 0;
+    margin: 0 !important;
+    font-size: 2rem;
+    padding: 0px;
+    font-weight: bold;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#works .imgcontain:hover .dis {
+    width: 100% !important;
+    padding-left: 5px;
+}
+
+#works .imgcontain {
+    filter: grayscale(90%);
+    transition: 0.4s;
+  }
+#works .box .imgcontain:hover {
+    filter: grayscale(0%);
+    scale: 1.05;
+  
+}
+@media (hover:none) {
+    #works .imgcontain {
+        filter: grayscale(0%);
+        transition: 0.4s;
+      }
+      #works .imgcontain:focus .dis {
+        width: 100% !important;
+        padding-left: 5px;
+    }
+    #works .box .imgcontain:focus {
+        scale: 1.05;
+      
+    }
+}
+
+
 
 #contact {
     background-color: rgb(130, 130, 130);
@@ -457,6 +549,7 @@ hr {
     height: auto;
     position: relative;
 }
+
 #contact .contact {
     width: 100px;
     height: 100%;
@@ -512,7 +605,7 @@ hr {
 #contact .top:hover {
     scale: 0.9;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     #header .list a {
         margin: 0 30px;
     }
@@ -571,13 +664,39 @@ hr {
         font-size: 5rem;
     }
    
+    /*------------------------------*/
+    #works .section_title {
+        font-size: 5rem;
+    }
+    
+    
+    #works .illustrators {
+
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+    #works .box {
+
+        width: 250px;
+       
+    }
+   
+   
+    #works .imgcontain {
+        position: relative; 
+        overflow: hidden;
+       margin: 15px 0;
+    }
+
+ /*--------------------------------------------*/
 
     #contact .contact {
         height: 60px; 
         width: 40%;
         flex-wrap: wrap;
         align-items: center;
-        padding-top: 10px;
+        padding-top: 15px;
     }
     #contact .info {
         width: 150px;
