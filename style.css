@@ -543,8 +543,37 @@ hr {
       
     }
 }
-
-
+#works .workbox {
+    margin-bottom: 30px;
+}
+#works .boxtitle {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 300;
+    padding-left: 5px;
+    
+}
+#works .boxtitle .color {
+    background-color: #329ad5;
+    width: 15px;
+    height: 35px;
+    display: inline-block;
+}
+#works .projects_container {
+    width: auto;
+    height: 50px;
+    margin: 20px 0;
+}
+#works .projects_container div {
+    font-size: 2rem;
+    text-align: left;
+    margin: 5px;
+}
+#works .projects_container a {
+    font-size: 1.5rem;
+}
 
 #contact {
     background-color: rgb(130, 130, 130);
@@ -673,6 +702,7 @@ hr {
     /*------------------------------*/
     #works .section_title {
         font-size: 5rem;
+        margin-bottom: 20px;
     }
     
     
@@ -694,7 +724,11 @@ hr {
         overflow: hidden;
        margin: 15px 0;
     }
-
+    #works .boxtitle {
+    
+        font-size: 2.5rem;
+       
+    }
  /*--------------------------------------------*/
 
     #contact .contact {
