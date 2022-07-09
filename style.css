@@ -83,6 +83,9 @@ hr {
     font-size: 1.5rem;
     font-weight: 400;
 }
+#header .herolink {
+    visibility: hidden;
+}
 /*----------------------------------*/
 
 #hero {
@@ -611,6 +614,9 @@ hr {
     }
     #header .list h1 {
         font-size: 2rem;
+    }
+    #header .herolink {
+        visibility: visible;
     }
     #hero .button_container {
         width: 150px;
