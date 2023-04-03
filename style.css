@@ -37,7 +37,10 @@ hr {
     font-size: 4rem;
     margin: 10px auto;
 }
-/*-------------------------------*/
+.icon img {
+    object-fit: contain;
+}
+-------------------------------
 #header {
 	position: fixed;
 	z-index: 1000;
